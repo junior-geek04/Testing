@@ -4,8 +4,12 @@ import requests
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from myapi import Base, User
+from dotenv import load_dotenv
+import os
 
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:1234@localhost:3306/userapp"
+
+load_dotenv()
+SQLALCHEMY_DATABASE_URL = os.getenv('DATABASE_URL')
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
