@@ -7,7 +7,7 @@ This project is a user management system built with FastAPI, integrating RabbitM
 ### 1. Clone the repository
 
 ```sh
-git [clone https://github.com/yourusername/yourrepository.git](https://github.com/junior-geek04/Testing.git)
+git clone https://github.com/junior-geek04/Testing.git
 cd Testing
 ```
 
